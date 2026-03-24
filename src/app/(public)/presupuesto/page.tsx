@@ -11,6 +11,11 @@ import {
   BarChart3,
   Code,
   Clock,
+  Euro,
+  Gift,
+  Users2,
+  Ticket,
+  Handshake,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { PhaseAccordion } from "@/components/shared/phase-accordion";
@@ -205,6 +210,103 @@ export default function PresupuestoPage() {
               escalable con el mejor rendimiento posible. Tu web será rápida,
               segura y preparada para crecer contigo.
             </p>
+          </div>
+        </section>
+
+        <section className="mb-8 overflow-hidden rounded-2xl shadow-glass">
+          <div className="gradient-primary p-6 md:p-8 text-white">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 rounded-xl bg-white/20">
+                <Euro className="h-5 w-5 text-white" />
+              </div>
+              <h2 className="text-2xl font-bold">Inversión</h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white/10 rounded-xl p-6 space-y-2">
+                <p className="text-white/60 text-sm">Valor del proyecto</p>
+                <p className="text-4xl font-bold">1.200€</p>
+                <p className="text-sm text-white/70">
+                  4 jornadas laborales (32 horas) de diseño, desarrollo,
+                  testing y puesta en producción. Precio basado en tarifa
+                  profesional de 37,50€/hora.
+                </p>
+              </div>
+
+              <div className="bg-white/20 rounded-xl p-6 space-y-2 ring-2 ring-white/40">
+                <div className="flex items-center gap-2 mb-1">
+                  <Gift className="h-4 w-4" />
+                  <p className="text-white/80 text-sm font-medium">
+                    Tu precio como cliente referido
+                  </p>
+                </div>
+                <p className="text-4xl font-bold">580€</p>
+                <p className="text-sm text-white/70">
+                  Por entrar en nuestro programa de referidos, accedes a un
+                  precio exclusivo con más del 50% de descuento sobre el valor
+                  real del proyecto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-surface-0 p-6 md:p-8 space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-xl bg-primary/5">
+                <Users2 className="h-5 w-5 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">Programa de Referidos</h3>
+                <p className="text-xs text-muted-foreground">
+                  Gana recomendando nuestra consultora
+                </p>
+              </div>
+            </div>
+
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Como cliente referido, no solo disfrutas de un precio preferente:
+              también te conviertes en embajador de nuestra consultora. Esto
+              significa que puedes recomendar nuestros servicios a otros negocios
+              y beneficiarte directamente de ello.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-surface-1 rounded-xl p-5 space-y-2 text-center">
+                <div className="inline-flex p-3 rounded-full bg-primary/5">
+                  <Ticket className="h-5 w-5 text-primary" />
+                </div>
+                <h4 className="font-semibold text-sm">Cupón del 15%</h4>
+                <p className="text-xs text-muted-foreground">
+                  Recibirás un cupón de descuento personal del 15% que podrás
+                  compartir con cualquier persona o negocio que quiera
+                  contratar nuestros servicios.
+                </p>
+              </div>
+
+              <div className="bg-surface-1 rounded-xl p-5 space-y-2 text-center">
+                <div className="inline-flex p-3 rounded-full bg-primary/5">
+                  <Euro className="h-5 w-5 text-primary" />
+                </div>
+                <h4 className="font-semibold text-sm">Comisión por referido</h4>
+                <p className="text-xs text-muted-foreground">
+                  Por cada cliente que contrate gracias a tu recomendación,
+                  recibirás una comisión económica previamente acordada entre
+                  ambas partes.
+                </p>
+              </div>
+
+              <div className="bg-surface-1 rounded-xl p-5 space-y-2 text-center">
+                <div className="inline-flex p-3 rounded-full bg-primary/5">
+                  <Handshake className="h-5 w-5 text-primary" />
+                </div>
+                <h4 className="font-semibold text-sm">Relación a largo plazo</h4>
+                <p className="text-xs text-muted-foreground">
+                  No hay límite de referidos. Mientras sigas recomendando,
+                  seguirás generando ingresos. Una colaboración en la que
+                  todos ganan.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
